@@ -22,15 +22,16 @@ from Bootstrap_template import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('', views.four_one, name='401'),
-    path('', views.four_four, name='404'),
-    path('', views.five_five, name='500'),
-    path('', views.charts, name='charts'),
-    path('', views.layout_sidenav_light, name='layout-sidenav-light'),
-    path('', views.layout_static, name='static'),
-    path('', views.login, name='login'),
-    path('', views.password, name='password'),
-    path('', views.register, name='register'),
-    path('', views.tables, name='tables'),
+    path('401/', views.four_one, name='401'),
+    path('404/', views.four_four, name='404'),
+    path('500/', views.five_five, name='500'),
+    path('charts/', views.charts, name='charts'),
+    path('layout-sidenav-light/', views.layout_sidenav_light, name='layout-sidenav-light'),
+    path('layout-static/', views.layout_static, name='layout-static'),
+    path('login/', views.login, name='login'),
+    path('password/', views.password, name='password'),
+    path('register/', views.register, name='register'),
+    path('tables/', views.tables, name='tables'),
+
 
 ]
